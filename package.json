@@ -1,0 +1,50 @@
+{
+  "name": "flux-react-immutable",
+  "version": "1.0.1",
+  "description": "Sample flux react immutable app",
+  "main": "js/app.js",
+  "scripts": {
+      "start": "watchify -o src/js/bundle.js -v -d .",
+      "build": "browserify . | uglifyjs -cm > src/js/bundle.min.js"
+  },
+  "browserify": {
+      "transform": [
+        "reactify",
+        "envify"
+      ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rx007/flux-react-immutable.git"
+  },
+  "keywords": [
+    "flux",
+    "react"
+  ],
+  "author": "rx007",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rx007/flux-react-immutable/issues"
+  },
+  "homepage": "https://github.com/rx007/flux-react-immutable#readme",
+  "dependencies": {
+    "gulp": "*",
+    "gulp-browserify": "*",
+    "gulp-concat": "*",
+    "browserify": "*",
+    "watchify": "*",
+    "uglify": "*",
+    "envify": "*",
+    "react": "*",
+    "underscore": "*",
+    "reactify": "*",
+    "react-semantify": "*",
+    "es6-promise": "*",
+    "flux": "*",
+    "object-assign": "*",
+    "vinyl-source-stream": "*",
+    "react-router-component": "*",
+    "react-async": "*",
+    "jquery": "*"
+  }
+}
